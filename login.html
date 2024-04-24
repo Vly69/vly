@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <center>
+   <style>
+        header {
+            background-color: #f0f0f0; /* Background color for the header */
+            padding: 20px;
+            text-align: center;
+        }
+        input[type="text"], input[type="password"], input[type="button"] {
+            margin: 5px;
+            padding: 10px;
+            border: 5px solid #ccc;
+            border-radius: 20px;
+        }
+        input[type="button"] {
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        main {
+            padding: 20px;
+        }
+    </style>
+     <style>
+        body {background-color: darkslategray ; }
+    </style>
+</head>
+
+<body>
+    <h1 style="color: white;">WELCOME BACK!</h1>
+
+    <header>
+        <input type="text" placeholder="Enter your Username" id="username">
+        <input type="password" placeholder="Enter your Password" id="password">
+        <input type="button" value="Login" onclick="login()">
+    </header>
+</center>
+    <script>
+        var myusername="vly";
+        var mypassword="12345";
+                function login() {
+            // You would typically have login validation here
+            // For the sake of example, let's assume the login is successful
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            // Check if username and password are valid (dummy check)
+            if (username === myusername && password === mypassword) {
+                // Redirect to myaccount.html
+                window.location.href = 'myaccount.html';
+            } else {
+                document.write('Invalid username or password');
+            }
+        }
+    </script>
+</body>
+</html>

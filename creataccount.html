@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CREAT ACCOUNT</title>
+    </head>
+    <center>
+        <style>
+             header {
+            background-color: #f0f0f0; /* Background color for the header */
+            padding: 20px;
+            text-align: center;
+        }
+             input[type="email"], input[type="password"], input[type="button"] {
+            margin: 5px;
+            padding: 10px;
+            border: 5px solid #ccc;
+            border-radius: 20px;
+        }
+               input[type="button"] {
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        main {
+            padding: 20px;
+        }
+        </style>
+         <style>
+            body {background-color: darkslategray ; }
+        </style>
+    <body>
+        <h1 style="color: white ;">WELECOM TO YOU</h1>
+        <header>
+            <input type="email" placeholder="Enter your Email" id="email">
+            <input type="password" placeholder="Enter your password" id="password">
+            <input type="button" value="Create Account" onclick="creatAccount()">
+        </header>
+        <script>
+            var Myemail="alinazeeh@gmail.com";
+            var mypassword="12345";
+                    function creatAccount() {
+                
+                var GetEmail = document.getElementById('email').value;
+                var GetPass = document.getElementById('password').value;
+                // Check if username and password are valid (dummy check)
+                if (GetEmail === Myemail && GetPass === mypassword) {
+                    // Redirect to myaccount.html
+                    window.location.href = 'myaccount.html';
+                } else {
+                    document.write('Invalid email or password');
+                }
+            }
+        </script>
+        </center>
+    </body>
+    </html>
+
+ <!--
+
+function signup() {
+        // Redirect to signup page
+        window.location.href = "signup.html";
+    }
+
+ -->   
